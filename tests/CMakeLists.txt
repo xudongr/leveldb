@@ -27,3 +27,15 @@ target_link_libraries(test_bloom util)
 
 add_executable(test_arena test_arena.cc)
 target_link_libraries(test_arena util)
+
+add_executable(test_filter_block test_filter_block.cc)
+target_link_libraries(test_filter_block table util)
+
+add_executable(test_log test_log.cc)
+target_link_libraries(test_log db util)
+
+add_executable(test_dbformat test_dbformat.cc)
+target_link_libraries(test_dbformat db util)
+
+add_executable(test_filename test_filename.cc)
+target_link_libraries(test_filename db util)
