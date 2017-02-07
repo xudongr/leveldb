@@ -57,13 +57,12 @@ int RunAllTests() {
   return 0;
 }
 
-/*
 std::string TmpDir() {
   std::string dir;
   Status s = Env::Default()->GetTestDirectory(&dir);
   ASSERT_TRUE(s.ok()) << s.ToString();
   return dir;
-}*/
+}
 
 int RandomSeed() {
   const char* env = getenv("TEST_RANDOM_SEED");

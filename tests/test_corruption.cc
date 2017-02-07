@@ -2,16 +2,16 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file. See the AUTHORS file for names of contributors.
 
-#include "leveldb/db.h"
+#include "db/db.h"
 
 #include <errno.h>
 #include <fcntl.h>
 #include <sys/stat.h>
 #include <sys/types.h>
-#include "leveldb/cache.h"
-#include "leveldb/env.h"
-#include "leveldb/table.h"
-#include "leveldb/write_batch.h"
+#include "util/cache.h"
+#include "util/env.h"
+#include "table/table.h"
+#include "db/write_batch.h"
 #include "db/db_impl.h"
 #include "db/filename.h"
 #include "db/log_format.h"

@@ -39,3 +39,33 @@ target_link_libraries(test_dbformat db util)
 
 add_executable(test_filename test_filename.cc)
 target_link_libraries(test_filename db util)
+
+add_executable(test_skiplist test_skiplist.cc)
+target_link_libraries(test_skiplist db util)
+
+add_executable(test_write_batch test_write_batch.cc)
+target_link_libraries(test_write_batch db util)
+
+add_executable(test_db test_db.cc)
+target_link_libraries(test_db db util)
+
+add_executable(test_corruption test_corruption.cc)
+target_link_libraries(test_corruption db util)
+
+add_executable(test_version_edit test_version_edit.cc)
+target_link_libraries(test_version_edit db util)
+
+add_executable(test_version_set test_version_set.cc)
+target_link_libraries(test_version_set db util)
+
+add_executable(test_recovery test_recovery.cc)
+target_link_libraries(test_recovery db util)
+
+add_executable(test_fault_injection test_fault_injection.cc)
+target_link_libraries(test_fault_injection db util)
+
+add_executable(test_c test_c.c)
+target_link_libraries(test_c db util)
+
+add_executable(test_autocompact test_autocompact.cc)
+target_link_libraries(test_autocompact db util)

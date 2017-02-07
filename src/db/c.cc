@@ -8,13 +8,13 @@
 #include <unistd.h>
 #include "util/cache.h"
 #include "util/comparator.h"
-//#include "leveldb/db.h"
+#include "db/db.h"
 #include "util/env.h"
 #include "util/filter_policy.h"
 #include "table/iterator.h"
 #include "util/options.h"
 #include "basic/status.h"
-//#include "leveldb/write_batch.h"
+#include "db/write_batch.h"
 
 using leveldb::Cache;
 using leveldb::Comparator;
