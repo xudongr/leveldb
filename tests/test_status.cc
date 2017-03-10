@@ -2,7 +2,7 @@
 #include "util/cache.h"
 #include "util/filter_policy.h"
 #include "util/comparator.h"
-#include "basic/write_batch.h"
+#include "db/write_batch.h"
 #include <iostream>
 
 using namespace leveldb;

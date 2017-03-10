@@ -69,3 +69,9 @@ target_link_libraries(test_c db util)
 
 add_executable(test_autocompact test_autocompact.cc)
 target_link_libraries(test_autocompact db util)
+
+add_executable(test_ test.cpp)
+target_link_libraries(test_ db)
+
+add_executable(test_histogram test_histogram.cc)
+target_link_libraries(test_histogram util )
